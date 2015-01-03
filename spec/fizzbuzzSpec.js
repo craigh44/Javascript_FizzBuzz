@@ -32,4 +32,16 @@ describe ("FizzBuzz", function(){
 		expect(fizz.say(3)).toBe("Fizz")
 	});
 
+	it("Should say 'Buzz' if divisible by 5", function(){
+		expect(fizz.say(5)).toBe("Buzz")
+	});
+
+	it("Should say 'FizzBuzz' if divisible by fifteen", function(){
+		expect(fizz.say(15)).toBe("FizzBuzz")
+	});
+
+	it("Should say the number if not a FizzBuzz number", function(){
+		expect(fizz.say(1)).toBe(1)
+	});
+
 });
