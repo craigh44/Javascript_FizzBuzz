@@ -20,5 +20,16 @@ describe ("FizzBuzz", function(){
 		expect(fizz.isDivisibleByFive(1)).toBe(false)
 	});
 
+	it("Should know when a number is divisible by fifteen", function(){
+		expect(fizz.isDivisibleByFifteen(15)).toBe(true)
+	});
+
+	it("Should know when a number isn't divisible by fifteen", function(){
+		expect(fizz.isDivisibleByFifteen(1)).toBe(false)
+	});
+
+	it("Should say 'Fizz' if divisible by 3", function(){
+		expect(fizz.say(3)).toBe("Fizz")
+	});
 
 });
